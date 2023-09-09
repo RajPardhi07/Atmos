@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:decimal ;
+    src: url(./Decimal-Semibold.ttf);
+}
+
+@font-face {
+    font-family:gotham ;
+    src: url(./GothamSSm-Book.ttf);
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: decimal;
+}
+
+#loader{
+    position: fixed;
+    height: calc(100vh - 11vh);
+    width: 100%;
+    
+    z-index: 9999999999999999999999999999;
+    top: 11vh;
+    display: flex;
+}
+.strips{
+    height: 100%;
+    width: calc(100%/4);
+    background-color: black;
+    
+}
+
+#nav{
+    width: 100%;
+    height: 6vw;
+    background-color:black;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    z-index: 999999999999999999999;
+}
+
+#nav svg{
+    position: relative;
+    z-index: 9999999999999999;
+    stroke: white;
+    fill: white;
+
+}
+
+.sec2{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 40px;
+    color: white;
+}
+
+.sec2 h4{
+    cursor: pointer;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 100;
+    font-size: 15px;
+
+
+}
+
+.sec2 h4:hover {
+    color:  #a2957d;
+   
+}
+
+
+.sec2 h3{
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 7px 20px;
+    border: 1px solid white;
+    font-weight: 100;
+
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+    /* width: 100%; */
+}
+
+#page1{
+    width: 100%;
+    height: 130vh;
+    background-image: url(https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/nebula.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    overflow: unset;
+    position: relative;
+}
+
+#page1 h1:nth-child(1){
+    margin-top: 15vw;
+}
+
+#page1 h1:nth-child(2){
+ color: #ac9f86;
+}
+
+#page1 canvas{
+    width: 90%;
+    height: 100vh;
+    position: absolute;
+    bottom: -10%;
+    z-index: 9999999999999999;
+    object-fit: contain;
+}
+
+#page2{
+    width: 100%;
+    height: 120vh;
+display: flex;
+background: linear-gradient(to bottom,rgb(0, 0, 0),black);
+
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: white;
+}
+
+#page2 h1{
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+#page2 h4{
+    font-size: 1.5vw;
+    /* font-family:gotham; */
+    text-align: center;
+    margin-bottom: 3vw;
+    font-weight: 100;
+    font-family: gilroy;
+    color: #8C95A1;
+}
+#con{
+    width: 34vw;
+    height: 80px;
+    /* background-color: red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.con1{
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    cursor: pointer;
+    
+}
+
+.con1 span{
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 4vw;
+    gap: 20px;
+}
+
+.con2{
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    cursor: pointer;
+    
+}
+
+.con2 span{
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 4vw;
+    gap: 20px;
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#page3 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#text{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    /* background-color: lightcyan; */
+position: relative;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(127, 204, 45); */
+    position: relative;
+}
+
+.card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+}
+#c1 h1{
+font-size: 37px;
+color: white;
+}
+.card p{
+    color: #8C95A1;
+    font-size: 1.3vw;
+    font-weight: 500;
+    font-family: gilroy;
+    /* width: 90%; */
+}
+
+.card h3{
+    color: white;
+    font-size: 20px;
+    font-family: gilroy;
+
+}
+
+#page3>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    width: 80%;
+    z-index: 9999999;
+}
+
+.card h3{
+    font-family: gilroy;
+}
+
+.card h4{
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+    
+    
+}
+
+#page4{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/nebula.jpg);
+color: white;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction:column;
+/* gap: 2.5vw; */
+
+padding: 10vw 0vw;
+
+}
+
+#page4 h4{
+    font-size: 14px;
+    color: #978D79;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+#page4 h1{
+    font-size: 4vw;
+    color:white;
+    text-align: center;
+width: 70%;
+margin-left: 13vw;
+}
+
+
+
+#page4 p{
+    font-weight: 100;
+    text-align: center;
+    font-size: 23px;
+    font-family: gilroy;
+    line-height: 2vw;
+    color: #8C95A1;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.learn{
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    cursor: pointer;
+    
+    
+}
+
+.learn span{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 2vw;
+    gap: 20px;
+}
+
+#page5{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative; 
+}
+
+#page5 canvas{
+    width: 100%;
+    height: 100%;
+
+}
+
+#text{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: white;
+}
+
+#tc1{
+    left: 15%;
+    top: 75%;
+    gap: 5px;
+
+}
+
+
+
+#tc1 p{
+    width: 100%;
+    font-weight: 100;
+}
+
+#tc1 h4{
+    margin-top: 2vw;
+    /* margin-left: -1vw; */
+    font-family: decimal;
+    font-size: .8vw;
+
+}
+
+#tc2{
+    top: 70%;
+    left: 80%;
+}
+#tc2 p{
+    font-weight: 100;
+
+    width: 100%;
+}
+
+#page6{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    color: white;
+    margin-top: -5px;
+    z-index: 99999999999999999;
+}
+
+#page6 p{
+    font-weight: 500;
+    width: 30%;
+    font-family: gilroy;
+    font-size: 18px;
+}
+
+#page6 h3{
+    color: #978D79;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    margin-top: 3vw;
+    font-style: italic;
+
+
+}
+#page6 h1{
+    font-size: 4.5vw;
+    margin-top: 4vw;
+/* line-height: 1; */
+width: 70%;
+color:#1F2B43;
+
+text-align: center;
+}
+
+#page6 p{
+    margin-top: 4vw;
+    text-align: center;
+
+}
+
+#page7{
+    width: 100%;
+    min-height: 400vh;
+    background-color:black;
+    position: relative;
+    z-index: 999999999;
+    margin-top: -3px;
+    /* margin-top: -3px; */
+}
+
+#bx{
+     width: 100%;   
+     height: 80%;
+     object-fit: cover;
+     background-color: #978D79;
+     background-image: url(https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/design-2.jpg);
+     background-position: center;
+     background-size: cover;
+     border-radius: 10px;
+
+}
+#box1{
+    width: 30vw;
+    height: 43vw;
+    position: absolute;
+    top: 3vw;
+    border-radius: 10px;
+    overflow: hidden;
+
+    left: 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#box1 p{
+    font-family: gilroy;
+    font-size: 18px;
+    color: #8C95A1;
+}
+
+#box2 p{
+    font-family: gilroy;
+    font-size: 18px;
+    color: #8C95A1;
+}
+
+#box2{
+    width: 33vw;
+    height: 50vw;
+    position: absolute;
+    top: 7vw;
+    border-radius: 10px;
+    overflow: hidden;
+/* background-color: red; */
+    right: 7vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#bx2{
+    width: 100%;   
+    height: 80%;
+    object-fit: cover;
+    background-position: top;
+    background-image: url(https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/design-4.jpg);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+#bx3{
+    width: 100%;   
+    height: 70%;
+    object-fit: cover;
+    background-color: #978D79;
+    background-image: url(https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/design-3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+#box3{
+   width: 30vw;
+   height: 40vw;
+   position: absolute;
+   top: 57vw;
+   border-radius: 10px;
+   overflow: hidden;
+
+   left: 10vw;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+#box3 p{
+   font-family: gilroy;
+   font-size: 18px;
+   color: #8C95A1;
+}
+
+
+#box4 p{
+    font-family: gilroy;
+    font-size: 18px;
+    color: #8C95A1;
+}
+
+#box4{
+    width: 28vw;
+    height: 34vw;
+    position: absolute;
+    top: 70vw;
+    border-radius: 10px;
+    overflow: hidden;
+    right: 7vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#bx4{
+    width: 100%;   
+    height: 64%;
+    object-fit: cover;
+    background-position: top;
+    background-image: url(https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/design-4.jpg);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+#bx5{
+    width: 100%;   
+    height: 85%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+#bx5 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#box5{
+   width: 35vw;
+   height: 60vw;
+   position: absolute;
+   top: 110vw;
+   border-radius: 10px;
+   overflow: hidden;
+   left: 10vw;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+#box5 p{
+   font-family: gilroy;
+   font-size: 18px;
+   color: #8C95A1;
+}
+
+#page8{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        background-color: red;
+
+}
+
+#page8 img{
+    height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: scale(1.4);
+}
+
+#bl{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #8e97a4;
+    background-color: rgba(0, 0, 0, 0.694);
+
+}
+
+#bl h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+#bl h1:nth-child(1){
+ color: white;
+
+}
+
+#t{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: white;
+    gap: 20px;
+
+
+
+
+}
+
+#t h3{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.en{
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+
+
+    
+    
+}
+
+.en span{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 3vw;
+    gap: 20px;
+}

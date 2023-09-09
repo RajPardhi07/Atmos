@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atmos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="nav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="156.38" height="38.24" viewBox="0 0 156.38 38.24"
+            class="icon icon--logo">
+            <path
+                d="M89.64,15.09a35.47,35.47,0,0,1-11,1.86V2.2l1-1.44h3.52L84.53,2.9H81.2V15.16a33.73,33.73,0,0,0,10-2.44l2.06,3c-.82.36-1.67.7-2.53,1ZM77.83,16.94a35.78,35.78,0,0,1-11.06-1.87l-1.1,1.62c-.85-.31-1.69-.63-2.52-1l2.06-3a33.82,33.82,0,0,0,10,2.44V2.88H71.91L73.35.75h3.52l1,1.44V16.94Zm13.66-5.19A32.76,32.76,0,0,1,82,14.27V3.63h4L83.48,0H79.16l-.94,1.39L77.28,0H73L70.47,3.63h4V14.27a33.25,33.25,0,0,1-9.53-2.52L62,16.05c1.28.58,2.59,1.12,3.95,1.58L67.07,16A36.44,36.44,0,0,0,77.83,17.7h.42A36.65,36.65,0,0,0,89.34,16l1.12,1.64a37.54,37.54,0,0,0,4-1.58Z">
+            </path>
+            <path
+                d="M39.1,29.16a.53.53,0,0,0-.48-.51l-.37-.07a.22.22,0,0,1-.19-.2v-.27a.16.16,0,0,1,.15-.16h3.72a.16.16,0,0,1,.16.16v.27a.2.2,0,0,1-.2.2l-.26,0a.54.54,0,0,0-.48.52v1.22a.53.53,0,0,1-.29.45,6.23,6.23,0,0,1-3.59,1.13,4.5,4.5,0,1,1,2-8.54s.35.25.53-.22A.22.22,0,0,1,40,23h.22a.21.21,0,0,1,.21.14L41,25.11v.05c0,.07-.06.11-.13.13l-.58.1s-.06,0-.09,0a.27.27,0,0,1-.2-.14l-.1-.23a2.76,2.76,0,0,0-2.72-1.54c-1.59,0-2.12,1.56-2.06,3.89s.65,3.82,2.23,3.8a2.28,2.28,0,0,0,1.6-.64.45.45,0,0,0,.11-.25V29.16Z">
+            </path>
+            <path
+                d="M45.22,23h4.4a.57.57,0,0,1,.52.37l.44,1.18s0,0,0,.05a.16.16,0,0,1-.16.16H50a.27.27,0,0,1-.21-.12l-.21-.29a1.31,1.31,0,0,0-1-.58H46.3a.33.33,0,0,0-.35.31V25.5a.35.35,0,0,0,.35.34h.53a.57.57,0,0,0,.61-.39l.12-.38a.24.24,0,0,1,.22-.14h.28a.21.21,0,0,1,.21.14l.75,2.3v.05a.12.12,0,0,1-.12.12l-.34.08h-.09c-.09,0-.16-.09-.2-.15L48,27.05a.9.9,0,0,0-.78-.41h-1a.34.34,0,0,0-.35.32v3.77a.34.34,0,0,0,.35.32h2.54a1.41,1.41,0,0,0,1.07-.54l.28-.39a.26.26,0,0,1,.22-.12h.42a.16.16,0,0,1,.16.16.11.11,0,0,1,0,.05l-.55,1.33a.56.56,0,0,1-.52.34h-7a.16.16,0,0,1-.16-.16v-.37a.2.2,0,0,1,.19-.2l.52-.07a.53.53,0,0,0,.48-.51V24.4a.54.54,0,0,0-.48-.52l-.52-.07a.22.22,0,0,1-.19-.21v-.39a.18.18,0,0,1,.16-.18Z">
+            </path>
+            <path
+                d="M24.16,31.88a.16.16,0,0,1-.16-.16v-.39a.22.22,0,0,1,.19-.21l.52-.07a.54.54,0,0,0,.48-.52V24.36a.53.53,0,0,0-.48-.51l-.52-.07a.23.23,0,0,1-.19-.2v-.39a.18.18,0,0,1,.16-.18h6.72a.57.57,0,0,1,.51.38l.45,1.17s0,0,0,.05a.16.16,0,0,1-.16.16h-.42a.29.29,0,0,1-.22-.12l-.21-.29a1.31,1.31,0,0,0-1-.58H27.55a.34.34,0,0,0-.35.32v1.37a.35.35,0,0,0,.35.33h.54a.55.55,0,0,0,.6-.39l.12-.37A.22.22,0,0,1,29,24.9h.28a.22.22,0,0,1,.22.14l.74,2.29v.05c0,.08-.05.11-.12.13l-.34.07s0,0-.09,0a.32.32,0,0,1-.19-.14L29.29,27a.9.9,0,0,0-.78-.42h-.94a.34.34,0,0,0-.36.31v3.77a.34.34,0,0,0,.36.32h2.54a1.38,1.38,0,0,0,1.07-.53l.28-.39a.27.27,0,0,1,.22-.13h.42a.16.16,0,0,1,.16.16.07.07,0,0,1,0,.06l-.55,1.33a.56.56,0,0,1-.51.34h-7Z">
+            </path>
+            <path
+                d="M71.71,24.38a.53.53,0,0,1,.48-.51l.52-.07a.23.23,0,0,0,.19-.22v-.39a.18.18,0,0,0-.16-.18H68.67a.18.18,0,0,0-.16.18v.39a.23.23,0,0,0,.2.22l.51.07a.52.52,0,0,1,.48.51v6.17a.53.53,0,0,1-.48.51l-.51.07a.23.23,0,0,0-.2.2v.39a.16.16,0,0,0,.16.16h6.21a.54.54,0,0,0,.51-.34l.55-1.33s0,0,0-.05A.16.16,0,0,0,75.8,30h-.43a.26.26,0,0,0-.21.12l-.28.39a1.41,1.41,0,0,1-1.07.54H72.05a.34.34,0,0,1-.35-.32V24.38Z">
+            </path>
+            <path
+                d="M78.8,23h4.41a.58.58,0,0,1,.52.38l.44,1.17s0,0,0,.05a.16.16,0,0,1-.16.16H83.6a.26.26,0,0,1-.21-.12l-.21-.3a1.31,1.31,0,0,0-1-.59H79.89a.34.34,0,0,0-.36.32v1.39a.35.35,0,0,0,.36.32h.51a.56.56,0,0,0,.61-.4l.12-.37a.22.22,0,0,1,.21-.14h.29a.2.2,0,0,1,.21.14l.75,2.29v.06c0,.07,0,.1-.13.12l-.33.07s-.06,0-.09,0-.16-.09-.2-.14L81.61,27a.9.9,0,0,0-.78-.42h-1a.34.34,0,0,0-.35.32v3.76a.34.34,0,0,0,.35.32h2.54a1.38,1.38,0,0,0,1.07-.53l.28-.39a.26.26,0,0,1,.22-.12h.42a.16.16,0,0,1,.16.16.11.11,0,0,1,0,.05L84,31.47a.56.56,0,0,1-.53.34h-7a.16.16,0,0,1-.16-.16v-.39a.22.22,0,0,1,.2-.21L77,31a.52.52,0,0,0,.48-.51V24.29a.53.53,0,0,0-.48-.51l-.51-.07a.23.23,0,0,1-.2-.2v-.39a.18.18,0,0,1,.16-.18H78.8Z">
+            </path>
+            <path
+                d="M110.44,28.33s-.22,2.73,2.18,2.73c2.15,0,2.15-2.45,2.15-2.45V24.42c0-.27-.11-.48-.37-.52l-.41-.07a.23.23,0,0,1-.2-.21v-.39a.18.18,0,0,1,.16-.18h2.51a.18.18,0,0,1,.16.18v.39a.23.23,0,0,1-.2.21l-.4.07c-.27,0-.38.25-.38.52v3.91a3.24,3.24,0,0,1-3.37,3.55c-4.11,0-3.9-3.52-3.9-3.52v-4a.5.5,0,0,0-.46-.51l-.51-.07a.23.23,0,0,1-.2-.22v-.39a.18.18,0,0,1,.16-.18h3.86a.18.18,0,0,1,.16.18v.39a.23.23,0,0,1-.2.22l-.41.07c-.26,0-.37.24-.37.51v3.95Z">
+            </path>
+            <path
+                d="M120.64,24.38a.52.52,0,0,1,.48-.51l.51-.07a.23.23,0,0,0,.2-.2v-.39a.18.18,0,0,0-.16-.18H117.6a.18.18,0,0,0-.16.18v.39a.2.2,0,0,0,.19.2l.52.07a.53.53,0,0,1,.48.51v6.17a.54.54,0,0,1-.48.51l-.52.07a.23.23,0,0,0-.19.2v.39a.16.16,0,0,0,.16.16h6.2a.54.54,0,0,0,.51-.34l.56-1.33a.43.43,0,0,1,0-.05.16.16,0,0,0-.16-.16h-.42a.29.29,0,0,0-.22.12l-.28.39a1.41,1.41,0,0,1-1.07.54H121a.34.34,0,0,1-.35-.32V24.38Z">
+            </path>
+            <path
+                d="M129.09,24.08a.34.34,0,0,1,.36-.32h1a1.68,1.68,0,0,1,1.07.62l.28.39a.25.25,0,0,0,.21.13h.43a.16.16,0,0,0,.16-.16.07.07,0,0,0,0-.06l-.55-1.33a.58.58,0,0,0-.51-.34h-6.92a.54.54,0,0,0-.51.34l-.55,1.33s0,0,0,.06a.16.16,0,0,0,.16.16h.43a.27.27,0,0,0,.21-.13l.28-.39a1.68,1.68,0,0,1,1.07-.62h1a.34.34,0,0,1,.36.32v6.45a.55.55,0,0,1-.48.52l-.52.07a.21.21,0,0,0-.19.21v.39a.18.18,0,0,0,.16.18h4.07a.18.18,0,0,0,.16-.18v-.39a.22.22,0,0,0-.2-.21l-.52-.07a.55.55,0,0,1-.48-.52Z">
+            </path>
+            <path
+                d="M19.16,28.82H16.39c-.34,0-.21-.26-.21-.26L17.6,24.9s.11-.32.25-.32.27.32.27.32l1.26,3.66S19.5,28.82,19.16,28.82Zm3.95,2.31L23,31.08s-.43-.09-.71-.78l-2.45-6.93a.55.55,0,0,0-.55-.36H17.53a.55.55,0,0,0-.55.36l-2.7,6.93a1.11,1.11,0,0,1-.84.78l-.25.05a.21.21,0,0,0-.17.2v.39a.16.16,0,0,0,.16.16h2.73a.18.18,0,0,0,.18-.16v-.39a.21.21,0,0,0-.16-.2h-.07a.52.52,0,0,1-.43-.5.58.58,0,0,1,0-.18l.21-.55a.43.43,0,0,1,.43-.25h3.34a.43.43,0,0,1,.43.25l.19.55a.48.48,0,0,1,0,.18.52.52,0,0,1-.43.5h-.07a.21.21,0,0,0-.16.2v.39a.16.16,0,0,0,.18.16h3.55a.16.16,0,0,0,.16-.16v-.39c-.07-.09-.14-.18-.23-.2">
+            </path>
+            <path
+                d="M57.25,26.89H55.54a.34.34,0,0,1-.35-.32V24.08a.34.34,0,0,1,.35-.32h1.71s1.69,0,1.69,1.6S57.25,26.89,57.25,26.89Zm4.81,4.24-.32,0a1.43,1.43,0,0,1-1.24-.91,9,9,0,0,0-1.85-2.61c-.19-.2.05-.25.05-.25,2.46-.58,2.31-2.2,2.31-2.2,0-2.1-2.68-2.08-2.68-2.08h-6.2a.18.18,0,0,0-.16.18v.39a.23.23,0,0,0,.2.21l.51.07a.5.5,0,0,1,.48.48v6.2a.54.54,0,0,1-.48.52l-.51.07a.23.23,0,0,0-.2.21v.39a.16.16,0,0,0,.16.16H56.2a.16.16,0,0,0,.16-.16v-.39a.23.23,0,0,0-.2-.21l-.51-.07a.54.54,0,0,1-.48-.52v-2.5a.34.34,0,0,1,.35-.32h.59a1.8,1.8,0,0,1,1.56,1.12s.48.85,1,1.85.87,1.2,2.38,1.2h1a.16.16,0,0,0,.16-.16v-.39a.23.23,0,0,0-.16-.25">
+            </path>
+            <path
+                d="M102,31.17c-1.59,0-2.19-1.44-2.26-3.79s.46-3.85,2-3.89S104,24.86,104,27.28,103.59,31.13,102,31.17Zm1.84-7.78a4.4,4.4,0,0,0-1.95-.45,4.49,4.49,0,1,0,1.95.45">
+            </path>
+            <path
+                d="M138.48,26.9h-1.71a.33.33,0,0,1-.35-.31V24.1a.34.34,0,0,1,.35-.32h1.71s1.69,0,1.69,1.6S138.48,26.9,138.48,26.9Zm4.83,4.23-.32,0a1.43,1.43,0,0,1-1.24-.91,9.41,9.41,0,0,0-1.85-2.61c-.2-.2,0-.25,0-.25,2.46-.58,2.31-2.2,2.31-2.2,0-2.1-2.68-2.08-2.68-2.08h-6.2a.18.18,0,0,0-.16.18v.39a.2.2,0,0,0,.19.19l.52.07a.52.52,0,0,1,.48.48v6.21a.54.54,0,0,1-.48.51l-.52.07a.23.23,0,0,0-.19.2v.39a.16.16,0,0,0,.16.16h4.07a.16.16,0,0,0,.16-.16v-.39a.2.2,0,0,0-.2-.2l-.51-.07a.53.53,0,0,1-.48-.51V28.06a.34.34,0,0,1,.35-.32h.59a1.83,1.83,0,0,1,1.56,1.12s.48.85,1,1.85.87,1.21,2.38,1.21h1a.16.16,0,0,0,.16-.16v-.41a.24.24,0,0,0-.16-.22">
+            </path>
+            <path
+                d="M67.09,26.76a.16.16,0,0,0-.16-.16H63a.16.16,0,0,0-.16.16v.94a.16.16,0,0,0,.16.16h3.91a.16.16,0,0,0,.16-.16Z">
+            </path>
+            <path
+                d="M95.37,28.88A4.57,4.57,0,0,1,91.63,31c-2.41.08-3.3-2.43-3.39-5.56s.64-5.67,3-5.74a4,4,0,0,1,3.77,2,.22.22,0,0,0,.19.14h.09l.59-.1a.22.22,0,0,0,.12-.13v-.05l-.8-2.47a.21.21,0,0,0-.21-.14h-.29a.22.22,0,0,0-.21.14c-.09.78-.71.39-.71.39a5.51,5.51,0,0,0-2.52-.6,6.27,6.27,0,0,0-6,6.55C85.33,29,88,32,91.3,32a5.55,5.55,0,0,0,2.77-.74s.69-.47.78.32a.23.23,0,0,0,.21.14h.29a.22.22,0,0,0,.21-.14L96.34,29V29c0-.07,0-.1-.12-.12l-.59-.11a.27.27,0,0,0-.09,0,.23.23,0,0,0-.17.13">
+            </path>
+            <path
+                d="M147.33,31.88H144a.16.16,0,0,1-.16-.16v-.37a.2.2,0,0,1,.19-.2l.52-.07a.54.54,0,0,0,.48-.51V24.4a.55.55,0,0,0-.48-.52l-.52-.07a.22.22,0,0,1-.19-.21v-.39A.18.18,0,0,1,144,23h6.71a.58.58,0,0,1,.52.37l.44,1.18s0,0,0,.05a.16.16,0,0,1-.16.16h-.43a.29.29,0,0,1-.21-.12l-.21-.31a1.31,1.31,0,0,0-1-.58h-2.26a.34.34,0,0,0-.35.32v1.38a.35.35,0,0,0,.35.34h.53a.57.57,0,0,0,.61-.39l.12-.37a.23.23,0,0,1,.22-.15h.28a.21.21,0,0,1,.21.15l.75,2.29v0c0,.07,0,.11-.12.13l-.34.07s-.06,0-.09,0-.16-.09-.2-.14l-.23-.43a.9.9,0,0,0-.78-.41h-1a.34.34,0,0,0-.35.32v3.77a.34.34,0,0,0,.35.32h2.35a6.65,6.65,0,0,0,3-.48c.94-.43,1.15-1.09,1-1.41s-.68-.51-1.66,0a8.78,8.78,0,0,0-2.4,2.38s-1.74,2.35-2.29,3.11-2.56,3.57-7.92,3.57H16.09c-5.33,0-6.52-2.24-7.07-3s-2.29-3.11-2.29-3.11a8.78,8.78,0,0,0-2.4-2.38c-1-.53-1.48-.37-1.66,0s-.1.84.86,1.42a5.58,5.58,0,0,0,3,.52,4.39,4.39,0,0,0,2.49-1c1.29-1.2,1.11-3.43,1.15-4.35V20.77a.56.56,0,0,0-.48-.55l-.51-.09a.22.22,0,0,1-.2-.21v-.57a.16.16,0,0,1,.16-.16h4.92a.16.16,0,0,1,.16.16v.57a.21.21,0,0,1-.19.21l-.52.09a.56.56,0,0,0-.48.55V22s0,2.27-.12,4.14c-.22,2.31-.61,5.59-5.23,6.36a9.2,9.2,0,0,1-5.79-1C.22,30.46-.37,28.9.22,27.88s2.1-1.1,3.64-.09A14.49,14.49,0,0,1,7.79,31.9c2.13,3.06,3.4,4.12,6.7,4.41H141c3.3-.29,5.42-2,7.55-5.07a14.71,14.71,0,0,1,3.93-4.1c1.54-1,3-.93,3.64.08s0,2.6-1.69,3.63c-1.53,1-3.13,1-5.79,1Z">
+            </path>
+        </svg>
+        <div class="sec2">
+            
+                <div class="upt">
+                    <h4>complication</h4>
+                    
+                </div>
+            
+        
+                <div class="upt">
+                    <h4>Design</h4>
+            
+                </div>
+            
+        
+                <div class="upt">
+                    <h4>craftsmen</h4>
+                    
+                </div>
+            
+        
+                <div class="upt">
+        
+                    <h4>COLLECTION</h4>
+                </div>
+            
+        
+                <div class="upt">
+                    <h3>ENQUIRE NOW</h3>
+                    
+                </div>
+            
+        </div>
+
+    </div>
+
+    <div id="loader">
+        <div class="strips" id="s1"></div>
+        <div class="strips" id="s2"></div>
+        <div class="strips" id="s3"></div>
+        <div class="strips" id="s4"></div>
+    </div>
+
+    <div id="main">
+        <div id="page1">
+            <h1>ATMOS HYBRIS MECHANICA</h1>
+            <h1>calibre 590</h1>
+            <canvas></canvas>
+        </div>
+        <div id="page2" data-scroll data-scroll-speed="-2">
+            <h1>THE PERPETUAL <br>
+                MOTION</h1>
+            <h4>Introducing the Atoms Hybris Mechanica <br>
+                Calibre 590.A unique timepiece so daringgly <br>
+                ambitious, it reimagines the art of perpetual <br>
+                timekeeping.</h4>
+
+            <div id="con">
+
+                <div class="con1">
+                    <span>WARCH THE FILM <i class="ri-play-circle-line"></i></span>
+                    <span>WARCH THE FILM <i class="ri-play-circle-line"></i></span>
+
+                </div>
+
+                <div class="con2">
+                    <span>EXPERIENCE THE EVENT <i class="ri-arrow-right-double-line"></i></span>
+                    <span>EXPERIENCE THE EVENT <i class="ri-arrow-right-double-line"></i></span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="page3">
+            <video autoplay loop muted src="./film-moon-cycles-prod.webm"></video>
+            <h1>Atoms Calibre Mechanica Calibre 590</h1>
+
+            <div id="text">
+                <div id="left">
+                    <div class="card" id="c1">
+                        <h1>BORN FROM THE <br> SOLAR SYSTEM</h1>
+                        <p>Inspired by instrument like the Tellurium <br> our watchmaker have created a new <br>
+                            mechanism tha reproduce the true <br> cycles of Earth , the Sun, and the Moon <br> more
+                            closely than ever before.</p>
+                        <h4>LEARN MORE</h4>
+                    </div>
+
+                    <div class="card" id="c3">
+                        <h3>See again in... 2412</h3>
+                        <p>It follows the precise revolution of the <br> moon around the earth so carefully, it <br>
+                            takes 5570 years before it loses even it <br> single day to error</p>
+
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="card" id="c2">
+                        <h3>Absolute Precision</h3>
+                        <p>It follows the precise revolution of the <br> moon around the earth so carefully, it <br>
+                            takes 5570 years before it loses even it <br> single day to error</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page4" data-scroll data-scroll-speed="-2">
+
+            <h4>COMPLICATION</h4>
+            <div class="t">
+
+                <h1>EXCEPTINAL MECHANICS THAT MASTER TIME</h1>
+
+
+            </div>
+
+            <p>
+                To create a calibre of such complexity requires not only the technical mastery of our <br> watchmakers
+                but also considrs the most complex calculations of the infinite cycles of time. <br>
+                For this callibre , our watchmakers created the most sophisticated gear train ratios possible <br>
+                resulting in utmost precision which unlocks a new level of mechanical accuracy that <br> measures time
+                almost to infinity.
+            </p>
+
+            <div class="learn">
+                <span>LEARN MORE</span>
+                <span>LEARN MORE</span>
+
+            </div>
+
+        </div>
+
+        <div id="page5">
+            <canvas></canvas>
+            <div id="text">
+                <div class="card" id="tc1">
+                    <h3>Powered by nothing but air</h3>
+                    <p>The Atoms lives on air,a <br> change in temperature of <br> just 1 degree rewinds the <br> clock
+                        for 48 hours. </p>
+
+                    <h4>LEARN MORE</h4>
+                </div>
+
+                <div class="card" id="tc2">
+                    <h3>Built from 443 component</h3>
+                    <p>
+                        The Atom's Calibre 590 <br>
+                        showcases our matchless <br> perpetual movement <br> mastery
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="page6">
+            <h3>DESIGN</h3>
+            <h1>CLOCK OF ARTISTIC ELEGANCE</h1>
+
+
+            <p>The Atome Hybris Mechanica Calibre 590 is
+                breathetakingly beautiful,a tribute to the artistic
+                elegance of truly remarkarble timekeeping. Born
+                from the stars, it features some of the most
+                uncommon elements on earth - and beyond.
+            </p>
+        </div>
+
+        <div id="page7">
+
+            <div id="box1">
+                <div id="bx">
+
+                </div>
+                <p>Against an expert ceafted, night blue sky blue laquer finish, entire piese seem to float in space.It
+                    is housed in brand new,modern glass cabinet which provide a view of the clock.</p>
+            </div>
+
+            <div id="box2">
+                <div id="bx2"></div>
+
+                <p>Against an expert ceafted, night blue sky blue laquer finish, entire piese seem to float in space.It
+                    is housed in brand new,modern glass cabinet which provide a view of the clock exceptional
+                    complication and intricate movement.</p>
+
+            </div>
+
+
+
+            <div id="box3">
+                <div id="bx3"></div>
+
+                <p>Against an expert ceafted, night blue sky blue laquer finish, entire piese seem to float in space.It
+                    is housed in brand new,modern glass cabinet which provide a view of the clock exceptional
+                    complication and intricate movement.</p>
+
+            </div>
+
+
+            <div id="box4">
+                <div id="bx4"></div>
+
+                <p>Against an expert ceafted, night blue sky blue laquer finish, entire piese seem to float in space.It
+                    is housed in brand new,modern glass cabinet which provide a view of the clock exceptional
+                    complication and intricate movement.</p>
+
+            </div>
+
+            <div id="box5">
+                <div id="bx5">
+                    <video data-scroll data-scroll-speed=".8"
+                        src="https://hybrismechanicacalibre590.jaeger-lecoultre.com/videos/film-earth.mp4" autoplay loop
+                        muted></video>
+
+                </div>
+
+                <p>Against an expert ceafted, night blue sky blue laquer finish, entire piese seem to float in space.It
+                    is housed in brand new,modern glass cabinet which provide a view of the clock exceptional
+                    complication and intricate movement.</p>
+
+            </div>
+
+        </div>
+
+        <div id="page8">
+            <img src="https://hybrismechanicacalibre590.jaeger-lecoultre.com/images/design-6.jpg" alt="">
+            <div id="bl">
+                <h1>Rare,precious,and beautiful.</h1>
+                <h1>The Atomss Hybris Mechanica Calibre is a </h1>
+                <h1>genuine object of art too elevate,the contemporary,</h1>
+                <h1>refined style of any modern home.</h1>
+
+            </div>
+
+            <div id="t">
+                <h3>Only 10 pieces will ever be created</h3>
+                <div class="en">
+                    <span>ENQUIRE NOW</span>
+                    <span>ENQUIRE NOW</span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+        integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
